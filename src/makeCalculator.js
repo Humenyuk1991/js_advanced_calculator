@@ -9,6 +9,7 @@ function makeCalculator() {
 
     operate(callback, number) {
       this.result = callback(this.result, number);
+
       return this;
     },
     add(a, b) {
@@ -25,8 +26,9 @@ function makeCalculator() {
     },
     reset() {
       this.result = 0;
+
       return this;
-    }
+    },
   };
 }
 
